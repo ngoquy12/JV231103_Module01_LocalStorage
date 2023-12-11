@@ -1,0 +1,79 @@
+.login-form-container {
+  height: 100vh;
+  background-image: url("https://i1-vnexpress.vnecdn.net/2019/09/29/2-1569755302.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=S0z7CRreMsILP0KJmGxQMA");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 400px;
+}
+
+.login-form-heading {
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.user-error,
+.email-error,
+.password-error,
+.confirm-password-error {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  color: red;
+  animation: fadeDown 0.2s linear;
+  display: none;
+}
+
+.border-red {
+  border-color: red !important;
+  transition: all 0.2s linear;
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form-group .form-label {
+  font-weight: 600;
+}
+
+.form-confirm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-register {
+  width: 100%;
+}
+
+.redrict {
+  text-align: center;
+}
