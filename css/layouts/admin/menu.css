@@ -1,0 +1,31 @@
+.admin-menu {
+  height: calc(100vh - 56px);
+  width: 250px;
+  padding: 20px;
+  background-color: rgb(11, 11, 11);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.menu-list-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-link {
+  color: #fff;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-link:hover {
+  background-color: rgb(37, 39, 40);
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+
+.menu-list-link .active {
+  background-color: #2b2929;
+  border-radius: 4px;
+}

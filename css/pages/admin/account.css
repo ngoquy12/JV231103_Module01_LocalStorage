@@ -1,0 +1,69 @@
+.main-account-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-area {
+  width: 300px;
+}
+
+.main-account-data table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+}
+
+.main-account-data table th,
+.main-account-data table td {
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #dadada;
+}
+
+.main-account-data table td {
+  height: 36px;
+}
+
+.main-account-data table tbody tr:hover {
+  background-color: #f2ecec;
+}
+
+.btn-func-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-func-group button:first-child {
+  color: green;
+}
+
+.btn-func-group button:nth-child(2) {
+  color: orange;
+}
+
+.btn-func-group button:nth-child(3) {
+  color: red;
+}
+
+.btn-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+}
+
+.pagination-group {
+  display: flex;
+  padding: 24px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination-group .active {
+  background-color: #ee4d2d;
+  color: #fff;
+}

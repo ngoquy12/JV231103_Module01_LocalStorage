@@ -1,0 +1,85 @@
+.admin-header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: rgb(201, 205, 208);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.admin-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fa-bars {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logo-heading {
+  font-weight: 600;
+}
+
+.admin-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fa-bell {
+  font-size: 20px;
+  color: #494646;
+}
+
+.avatar-admin {
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 2px;
+  border: 2px solid rgb(225, 216, 216);
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.fa-chevron-down {
+}
+
+.option-container {
+  position: relative;
+}
+
+.fa-solid {
+}
+
+.fa-chevron-down {
+}
+
+.list-option {
+  position: absolute;
+  left: -160px;
+  top: 30px;
+  width: 180px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 4px;
+  animation: fadeDown 0.2s linear;
+  display: none;
+}
+
+.option {
+  padding: 10px 8px;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.option i {
+  margin-right: 8px;
+}

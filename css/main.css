@@ -2,6 +2,30 @@
 @import url(./base/form.css);
 @import url(./base/input.css);
 @import url(./base/button.css);
+@import url(./base/modal.css);
+
+/* Import layout user */
+@import url(./layouts/user/header.css);
+
+/* Import layout admin */
+@import url(./layouts/admin/header.css);
+@import url(./layouts/admin/menu.css);
+@import url(./layouts/admin/main.css);
+
+/* Import pages user */
+@import url(./pages/user/home.css);
+@import url(./pages/user/product-detail.css);
+@import url(./pages/user/cart.css);
+
+/* Import pages admin */
+@import url(./pages/admin/home.css);
+@import url(./pages/admin/account.css);
+
+:root {
+  --text-white: #fff;
+  --text-red: red;
+  --bg-white: #fff;
+}
 
 * {
   margin: 0;
@@ -12,14 +36,33 @@
 body {
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
-  background-color: #fff;
+  background-color: var(--bg-white);
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 input[type="checkbox"] {
   height: 15px;
   width: 15px;
   cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

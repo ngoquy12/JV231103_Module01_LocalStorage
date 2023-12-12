@@ -1,0 +1,9 @@
+.admin-main-content {
+  display: flex;
+}
+
+.admin-main {
+  padding: 20px 24px;
+  flex: 1;
+  background-color: #fff;
+}

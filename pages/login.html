@@ -8,27 +8,30 @@
   </head>
   <body>
     <div class="login-form-container">
-      <form class="login-form">
+      <form class="login-form" id="form">
         <h3 class="login-form-heading">Đăng nhập tài khoản</h3>
         <div class="form-group">
           <label class="form-label" for="">Email</label>
-          <input type="text" class="input" />
+          <input id="email" type="text" class="input" />
+          <p class="email-error">Email khong duoc de trong.</p>
         </div>
         <div class="form-group">
           <label class="form-label" for="">Mật khẩu</label>
-          <input type="text" class="input" />
+          <input id="password" type="text" class="input" />
+          <p class="password-error">Mat khau khong duoc de trong.</p>
         </div>
         <div class="form-confirm">
           <input type="checkbox" />
           <p>Lưu thông tin đăng nhập</p>
         </div>
         <div class="button-register">
-          <button class="button">Đăng nhập</button>
+          <button type="submit" id="btnSubmit" class="button">Đăng nhập</button>
         </div>
         <div class="redrict">
           Bạn chưa có tài khoản? <a href="./register.html">Đăng ký</a>
         </div>
       </form>
     </div>
+    <script src="../js/login.js"></script>
   </body>
 </html>

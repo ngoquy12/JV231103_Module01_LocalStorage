@@ -32,5 +32,16 @@ export const formatDate = (date) => {
   return `${day}/${month}/${year}`;
 };
 
-// Một file chỉ được export default một lần duy nhất
-// export default formatDate;
+/**
+ * Kiểm tra định dạng email
+ * @param {*} email Chuỗi email cần kiểm tra
+ * @returns null nếu sai định dạng,
+ * Auth: NVQUY(12/12/2023)
+ */
+export const validateEmail = (email) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
