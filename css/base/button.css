@@ -2,18 +2,47 @@
   height: 36px;
   padding: 0 16px;
   font-weight: 600;
-  color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #0d6efd;
-  width: 100%;
 }
 
-.button:hover {
-  background-color: #2574ea;
+.button-primary {
+  color: #fff;
+  background-color: #007aff;
 }
 
-.button:focus {
-  background-color: #0666f7;
+.button-primary:hover {
+  background-color: #3395ff;
+}
+
+.button-primary:focus {
+  background-color: #0062cc;
+}
+
+.button-secondary {
+  background-color: #fff;
+  border-color: #dadada;
+}
+
+.button-secondary:hover {
+  background-color: #eff2f4;
+}
+
+.button-secondary:focus {
+  background-color: #dfe5e8;
+}
+
+.button-danger {
+  background-color: #ec2b2b;
+  border-color: #dadada;
+  color: #fff;
+}
+
+.button-danger:hover {
+  background-color: #dd3232;
+}
+
+.button-danger:focus {
+  background-color: #c50e0e;
 }

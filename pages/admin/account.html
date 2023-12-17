@@ -96,15 +96,32 @@
               <tbody id="tbody"></tbody>
             </table>
           </div>
-          <div class="pagination-group">
-            <!-- <i class="fa-solid fa-angles-left"></i>
-            <button class="page-number active">1</button>
-            <button class="page-number">1</button>
-            <button class="page-number">1</button>
-            <button class="page-number">1</button>
-            <i class="fa-solid fa-angles-right"></i> -->
-          </div>
+          <div class="pagination-group"></div>
         </main>
+      </div>
+    </div>
+
+    <!-- Dialog xác nhận xóa -->
+    <div class="overlay" id="dialogConfirmDelete" style="display: none">
+      <div class="dialog">
+        <div class="dialog-header">
+          <h3 class="dialog-heading">Xác nhận</h3>
+          <i id="iconCloseDialog" class="dialog-icon fa-solid fa-xmark"></i>
+        </div>
+        <div class="dialog-body">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p class="dialog-content">
+            Bạn có chắc chắn muốn khóa tài khoản của &#60;<span
+              id="userNameBlock"
+              >Ngọ Văn Quý &#62; </span
+            >không?
+          </p>
+        </div>
+        <div class="border-bottom"></div>
+        <div class="dialog-footer">
+          <button id="btnClose" class="button button-secondary">Hủy</button>
+          <button id="btnOkDelete" class="button button-primary">Đồng ý</button>
+        </div>
       </div>
     </div>
 
@@ -112,8 +129,9 @@
       const iconDropdown = document.querySelector("#iconDropdown");
       const listOption = document.querySelector("#listOption");
 
+      // Đóng và mở option
       iconDropdown.addEventListener("click", (e) => {
-        e.stopPropagation();
+        e.stopPropagation(); // Ngăn chặn sự kiện nổi bọt
         if (listOption.style.display === "block") {
           listOption.style.display = "none";
         } else {
@@ -121,6 +139,7 @@
         }
       });
 
+      // Khi click vào một nơi bất kì trên màn hình thì ẩn option
       window.addEventListener("click", () => {
         if (listOption.style.display === "block") {
           listOption.style.display = "none";

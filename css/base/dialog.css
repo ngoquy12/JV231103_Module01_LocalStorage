@@ -1,0 +1,65 @@
+.dialog {
+  background-color: #fff;
+  z-index: 1000;
+  width: 400px;
+  padding: 20px 24px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeUp 0.2s linear;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dialog-heading,
+.dialog-icon {
+  font-size: 18px;
+}
+
+.dialog-body {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.fa-triangle-exclamation {
+  font-size: 24px;
+  color: #ff9800;
+}
+
+.dialog-content {
+  line-height: 20px;
+}
+
+.dialog-content span {
+  font-weight: 600;
+}
+
+.dialog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.icon-danger {
+  color: rgb(211, 49, 49);
+  font-size: 20px;
+}

@@ -48,18 +48,6 @@
   transition: all 0.2s linear;
 }
 
-@keyframes fadeDown {
-  from {
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .form-group .form-label {
   font-weight: 600;
 }

@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap");
+
+/* Import base CSS */
 @import url(./base/form.css);
 @import url(./base/input.css);
 @import url(./base/button.css);
 @import url(./base/modal.css);
+@import url(./base/dialog.css);
 
 /* Import layout user */
 @import url(./layouts/user/header.css);
@@ -20,6 +23,8 @@
 /* Import pages admin */
 @import url(./pages/admin/home.css);
 @import url(./pages/admin/account.css);
+@import url(./pages/admin/category.css);
+@import url(./pages/admin/product.css);
 
 :root {
   --text-white: #fff;
@@ -41,7 +46,8 @@ body {
   height: 100%;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   height: 15px;
   width: 15px;
   cursor: pointer;
@@ -65,4 +71,32 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.fadeDown {
+  animation: fadeDown 0.2s linear;
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+textarea {
+  padding: 8px 16px !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dadada;
+}
+
+.driven {
+  border-bottom: 1px solid #dadada;
 }
