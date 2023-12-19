@@ -19,8 +19,10 @@ formElement.addEventListener("submit", (e) => {
     if (!findUserByEmail) {
       alert("Email hoac mat khau khong dung");
     } else {
-      localStorage.setItem("userLogin", JSON.stringify(findUserByEmail.email));
-      alert("Dang nhap thanh cong");
+      localStorage.setItem("userLogin", JSON.stringify(findUserByEmail));
+      setTimeout(() => {
+        window.location.href = "user/home.html";
+      }, 2000);
     }
   }
 });
