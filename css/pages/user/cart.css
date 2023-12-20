@@ -71,3 +71,17 @@
   gap: 36px;
   align-items: center;
 }
+
+.handle-quantity-cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.handle-quantity-cart button {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  cursor: pointer;
+}
